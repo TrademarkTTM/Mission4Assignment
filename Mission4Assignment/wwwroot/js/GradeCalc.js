@@ -49,7 +49,13 @@
         case finalGrade < 60:
             letterGrade = 'E';
     }
+
+    alert("Test")
+
+    //Sending the output to an alert (Mission 5 Requirement)
+    alert("Final Grade: " + finalGrade + "\nLetter Grade: " + letterGrade)
+
     //Changing the text of the output and making the element visible. 
-    $("#finalOutput").text("Grade: " + finalGrade + "\nLetter Grade: " + letterGrade);
-    $("#finalOutput").show();
+    //$("#finalOutput").text("Grade: " + finalGrade + "\nLetter Grade: " + letterGrade);
+    //$("#finalOutput").show();
 })

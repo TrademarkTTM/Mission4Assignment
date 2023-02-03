@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <!--Webpage Header-->
+    <title>@ViewData["Title"]</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/icons8-pie-60.png" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+</head>
+<body class="custom">
+    <!--Nav Bar (Style this)-->
+    <nav>
+        <a asp-controller="Default" asp-action="Index">Home</a>
+        <a asp-controller="Default" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/GradeCalc.js"></script>
+</body>
+</html>
