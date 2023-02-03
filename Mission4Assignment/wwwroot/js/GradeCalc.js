@@ -50,8 +50,6 @@
             letterGrade = 'E';
     }
 
-    alert("Test")
-
     //Sending the output to an alert (Mission 5 Requirement)
     alert("Final Grade: " + finalGrade + "\nLetter Grade: " + letterGrade)
 

@@ -11,18 +11,17 @@
     <form method="post">
         <h3>Grade Calculator</h3>
         <label class="form-label">Assignments:</label>
-        <input id="assignmentsNum" asp-for="assignmentNum" />%<br />
+        <input id="assignmentsNum" asp-for="assignmentNum" />% @Html.ValidationMessageFor(Model => Model.assignmentNum)<br />
         <label class="form-label">Group Projects:</label>
-        <input id="gpNum" asp-for="gpNum" />%<br />
+        <input id="gpNum" asp-for="gpNum" />% @Html.ValidationMessageFor(Model => Model.gpNum)<br />
         <label class="form-label">Quizzes:</label>
-        <input id="quizNum" asp-for="quizNum" />%<br />
+        <input id="quizNum" asp-for="quizNum" />% @Html.ValidationMessageFor(Model => Model.quizNum)<br />
         <label class="form-label">Midterm Exam:</label>
-        <input id="midNum" asp-for="midNum" />%<br />
+        <input id="midNum" asp-for="midNum" />% @Html.ValidationMessageFor(Model => Model.midNum)<br />
         <label class="form-label">Final Exam:</label>
-        <input id="finalNum" asp-for="finalNum" />%<br />
+        <input id="finalNum" asp-for="finalNum" />% @Html.ValidationMessageFor(Model => Model.finalNum)<br />
         <label class="form-label">INTEX:</label>
-        <input id="intexNum" asp-for="intexNum" />%<br />
+        <input id="intexNum" asp-for="intexNum" />% @Html.ValidationMessageFor(Model => Model.intexNum)<br />
         <button type="submit" id="btnSend">Submit</button><br />
-        <!--<label id="finalOutput" style="display: none">Test</label>-->
     </form>
 </div>
